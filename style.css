@@ -1,0 +1,289 @@
+/* Style en commun de toutes les pages */
+
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background-color: #1F2039;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #A5B4FC;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    color: #242424;
+}
+
+p {
+    font-size: 1.1em;
+    font-family: 'Manrope', sans-serif;
+    color: #F9F8FF;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Manrope', sans-serif;
+    color: #242424;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header, 
+footer {
+    background-color: white;
+    padding: 20px 50px;
+}
+
+.logo-site:hover {
+    opacity: 0.5;
+}
+
+.icones-reseaux:hover {
+    opacity: 0.5;
+}
+
+.conteneur-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-site {
+    margin-left: 30px;
+}
+
+.conteneur-liens {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: auto;
+    gap: 100px;
+}
+
+.infos-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-site-footer {
+    margin-left: 30px;
+    width: 70px;
+}
+
+.conteneur-liens-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: auto;
+    gap: 30px;
+}
+
+
+/* Style en commun avec la page "À propos" */
+
+.cta {
+    color: white;
+    background: linear-gradient(#8E86B5, #ACAEED);
+    padding: 20px 30px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.cta:hover {
+    background: linear-gradient(#696484, #8788BA);
+    text-decoration: none;
+}
+
+
+/* Style spécifique à la page d'accueil */
+
+em {
+    font-style: normal;
+    color: #A5B4FC;
+}
+
+.sous-titre-accueil-1 {
+    color: #242424;
+}
+
+.sous-titre-accueil-2 {
+    color: #A5B4FC;
+}
+
+.carre-contenu-bio {
+    padding: 80px;
+}
+
+.carre-contenu-bio
+.conteneur-robbie-lens {    
+    justify-content: center;
+    gap: 5%;
+}
+
+.conteneur-robbie-lens {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.conteneur-presentation-metier {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 500px;
+}
+
+.conteneur-presentation-metier
+h1 {
+    margin: 0;
+}
+
+.conteneur-presentation-metier
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.conteneur-bouton-1 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 3%;
+    height: auto;
+    width: 52%;
+}
+
+.conteneur-photo-robbie-lens {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 60px 100px;
+    grid-template-rows: 100px 100px 100px 60px 100px;
+}
+
+.cube-deco {
+    grid-column: 5 / 5;
+    grid-row: 5 / 5;
+    border-right: 1px #8E86B5 solid;
+    border-bottom: 1px #8E86B5 solid;
+}
+
+.conteneur-photo-robbie-lens
+img {
+    border: 3px #8E86B5 solid;
+}
+
+.carre-contenu-projet {
+    padding: 70px;
+    padding-bottom: 90px;
+    background-color: white;
+}
+
+.conteneur-dernier-projet {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conteneur-dernier-projet
+h2 {
+    margin: auto;
+    padding-bottom: 70px;
+}
+
+.rangee-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+    padding-bottom: 1%;
+}
+
+.paysage7-crique {
+    background-color: lightgrey;
+    background-image: url('images/portfolio/paysages/paysage7.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 300px;
+}
+
+.paysage8-source-chaude {
+    background-color: lightgrey;
+    background-image: url('images/portfolio/paysages/paysage8.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 300px;
+}
+
+.paysage2-ciel-rouge {
+    background-color: lightgrey;
+    background-image: url('images/portfolio/paysages/paysage2.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 300px;
+}
+
+.rangee-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1%;
+}
+
+.paysage3-pont {
+    background-color: lightgrey;
+    background-image: url('images/portfolio/paysages/paysage3.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 300px;
+}
+
+.paysage6-montagne-lac {
+    background-color: lightgrey;
+    background-image: url('images/portfolio/paysages/paysage6.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 300px;
+}
+
+.paysage4-arbre-lac {
+    background-color: lightgrey;
+    background-image: url('images/portfolio/paysages/paysage4.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 320px;
+    height: 300px;
+}
+
+.conteneur-bouton-2 {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.carre-contact {
+    padding: 70px;
+}
+
+.conteneur-contact {
+    margin: 0;
+    background-color: rgb(4, 92, 4);
+    text-align: center;
+}
+
+.grid-contact {
+    display: grid;
+    
+}
