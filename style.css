@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 13%;
+    gap: 15%;
 }
 
 .conteneur-presentation-metier {
@@ -44,19 +44,29 @@
     width: 300px;
 }
 
-/* Conteneur de la photo de Robbie Lens */
 .conteneur-photo-robbie-lens {
-    display: grid;
-    grid-template-columns: 100px 100px 100px 60px 100px;
-    grid-template-rows: 100px 100px 100px 60px 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0 50px 40px 0;
+    position: relative;
+}
+
+.conteneur-photo-robbie-lens img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Décoration qui décor la photo de Robbie Lens */
 .cube-deco {
-    grid-column: 5 / 5;
-    grid-row: 5 / 5;
     border-right: 1px var(--couleur-fonce-violet-gris) solid;
     border-bottom: 1px var(--couleur-fonce-violet-gris) solid;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: -30px; /* ajuste selon le design */
+    right: -30px;
 }
 
 
@@ -84,7 +94,7 @@
     font-weight: 500;
 }
 
-.conteneur-dernier-projet h2 {
+.sous-titre-accueil-1 {
     margin: auto;
     padding-bottom: 70px;
 }
@@ -181,9 +191,6 @@
     font-size: 2.2em;
     font-family: var(--typo-titre), sans-serif;
     font-weight: 500;
-}
-
-.conteneur-contact h2 {
     text-align: center;
     margin-bottom: 50px;
 }

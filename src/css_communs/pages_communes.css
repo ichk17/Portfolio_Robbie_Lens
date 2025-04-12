@@ -119,7 +119,7 @@ footer {
     }
 
     .carre-contenu-bio {
-        padding: 10% 0;
+        padding: 12% 0;
     }
 
     .conteneur-robbie-lens {
@@ -128,16 +128,14 @@ footer {
         justify-content: center;
     }
 
-    .conteneur-photo-robbie-lens {
-        display: grid;
-        grid-template-columns: 60px 60px 60px 60px 70px;
-        grid-template-rows: 60px 60px 60px 60px 70px;
-        margin: 0 auto;
+    .cube-deco {
+        bottom: -22px;
+        right: -22px;
     }
 
     .conteneur-photo-robbie-lens img {
-        width: 287.36px;
-        height: 291.47px;
+        width: 287px;
+        height: 291px;
     }
 
     .conteneur-presentation-metier {
@@ -146,23 +144,92 @@ footer {
 
     .conteneur-presentation-metier h1 {
         font-size: 1.7em;
-        margin: 0 40px;
+        margin: 0 50px;
     }
 
     .conteneur-presentation-metier p {
         font-size: 1em;
-        margin: 30px 40px;
+        margin: 20px 50px;
+        padding: 0 5px;
     }
 
     .conteneur-bouton-1 {
         width: auto;
-        margin: 0 40px;
-        padding-left: ;
-        padding-right: ;
+        margin: 0 50px;
+    }
+
+    .sous-titre-accueil-1 {
+        font-size: 1.6em;
+        padding-bottom: 40px;
     }
 
     .conteneur-bouton-1 a {
-
+        padding: 20px 30px;
     }
 
+    .carre-contenu-projet {
+        padding: 40px 0;
+        width: 100%;
+    }
+
+    .conteneur-dernier-projet {
+        width: 100%;
+    }
+
+    .rangee-1 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .rangee-2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .bouton-portfolio {
+        padding-bottom: 20px;
+    }
+
+    .sous-titre-accueil-2 {
+        font-size: 1.6em;
+    }
+
+    .grid-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .partie-message textarea {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 253px;
+        height: 195px;
+    }
+
+    .bouton-envoyer input[type="submit"] {
+        margin: 20px auto;
+    }
+
+    .infos-footer {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+        gap: 50px;
+    }
+
+    .conteneur-liens-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        padding: 0;
+    }
 }
