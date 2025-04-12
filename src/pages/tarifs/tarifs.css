@@ -1,0 +1,171 @@
+/* -------------------------------- LES IMPORTS -------------------------------- */
+
+@import "src/css_communs/variables.css";
+
+/* -------------------------------- SECTION TARIF -------------------------------- */
+
+.conteneur-tarifs {
+    display: flex;
+    flex-direction: column;
+    margin: 150px 300px 50px 300px;
+    gap: 50px;
+}
+
+.conteneur-haut {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titre-tarifs {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.bouton-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.conteneur-bas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* --- Boîte 1 --- */
+.boite-1 {
+    width: 278px;
+    height: 295px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--couleur-clair-bleu-lavande);
+}
+
+.boite-1 h2 {
+    font-size: 1.25em;
+}
+
+.boite-1 p {
+    font-size: 0.9em;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.boite-1 h3 {
+    font-size: 1em;
+    margin-top: 40px;
+}
+
+.boite-1 span {
+    font-size: 0.7em;
+    color: var(--couleur-clair-blanc);
+}
+
+/* --- Boîte 2 --- */
+.boite-2 {
+    width: 278px;
+    height: 295px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--couleur-clair-bleu-lavande);
+}
+
+.boite-2 h2 {
+    font-size: 1.25em;
+}
+
+.boite-2 p {
+    font-size: 0.9em;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.boite-2 h3 {
+    font-size: 1em;
+    margin-top: 40px;
+}
+
+.boite-2 span {
+    font-size: 0.7em;
+    color: var(--couleur-clair-blanc);
+}
+
+/* --- Boîte 3 --- */
+.boite-3 {
+    width: 278px;
+    height: 295px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-color: var(--couleur-clair-bleu-lavande);
+}
+
+.boite-3 h2 {
+    font-size: 1.25em;
+}
+
+.boite-3 p {
+    font-size: 0.9em;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.boite-3 h3 {
+    font-size: 1em;
+    margin-top: 40px;
+}
+
+.boite-3 span {
+    font-size: 0.7em;
+    color: var(--couleur-clair-blanc);
+}
+
+.boite-1 h2, h3,
+.boite-2 h2, h3,
+.boite-3 h2, h3 {
+    font-family: var(--typo-titre), sans-serif;
+    font-weight: 400;
+    color: var(--couleur-clair-bleu-lavande);
+}
+
+.section-studio-pro {
+    display: flex;
+    margin: 80px 300px 500px 300px;
+}
+
+.conteneur-studio-pro {
+    width: 100%;
+}
+
+.conteneur-studio-pro h2 {
+    font-family: var(--typo-titre), sans-serif;
+    font-weight: 400;
+    color: var(--couleur-clair-bleu-lavande);
+    font-size: 2.2em;
+}
+
+.conteneur-studio-pro table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.conteneur-studio-pro th {
+    color: white;
+    font-family: var(--typo-titre), sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    border: 1px var(--couleur-clair-bleu-lavande) solid;
+    padding: 10px;
+}
+
+.conteneur-studio-pro td {
+    color: white;
+    font-family: var(--typo-texte), sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    border: 1px var(--couleur-clair-bleu-lavande) solid;
+    padding: 70px;
+}

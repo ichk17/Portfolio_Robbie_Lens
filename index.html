@@ -6,20 +6,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Accueil - Robbie Lens Photographie</title>
 
     <!-- liens vers les pages css -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="a_propos.css">
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="src/css_communs/pages_communes.css">
     <!-- liens vers les typographies -->
+    <!-- Typo : Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <!-- Typo : Manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Typo : Michroma -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 </head>
 
 
@@ -27,90 +33,126 @@
 
 <body>
 
-    <!-- PARTIE HAUTE DU SITE -->
-    <header>
-        <nav>
-            <div class="conteneur-nav">
-                <a href="index.html"><img class="logo-site" src="images/logo.png" alt="logo Robbie Lens" id="logo"/></a>
-                <div class="conteneur-liens">
-                    <div class="lien-accueil"><a href="index.html">Accueil</a></div>
-                    <div class="lien_a-propos"><a href="html/a_propos.html">À propos</a></div>
-                    <div class="lien-tarifs"><a href="html/a_propos.html#mes-tarifs">Tarifs</a></div>
-                    <div class="lien-portfolio"><a href="html/portfolio.html">Portfolio</a></div>
+<!-- PARTIE HAUTE DU SITE -->
+<header>
+    <nav>
+        <div class="conteneur-nav">
+            <a href="index.html">
+                <img class="logo-site"
+                     src="src/img/logo/logo.png"
+                     alt="logo Robbie Lens"
+                     id="logo"/>
+            </a>
+            <div class="conteneur-liens">
+                <div class="lien-accueil"><a href="index.html">Accueil</a></div>
+                <div class="lien_a-propos"><a href="src/pages/a-propos/a_propos.html">À propos</a></div>
+                <div class="lien-tarifs"><a href="src/pages/tarifs/tarifs.html">Tarifs</a></div>
+                <div class="lien-portfolio"><a href="src/pages/portfolio/portfolio.html">Portfolio</a></div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- PARTIE PRINCIPALE DU SITE -->
+<main>
+    <section class="carre-contenu-bio">
+        <div class="conteneur-robbie-lens">
+            <div class="conteneur-presentation-metier">
+                <h1>Robbie Lens <br/>
+                    Photographie</h1>
+
+                <p>
+                    Où professionalisme s'allie avec passion.
+                    Depuis plus de 5 ans maintenant, j'exerce
+                    mon métier avec la passion qui m'anime :
+                    capturer l'essence de chaque instant.
+                </p>
+
+                <div class="conteneur-bouton-1">
+                    <a class="cta" href="#">UN PROJET ? ÉCRIVEZ-MOI</a>
                 </div>
             </div>
-        </nav>
-    </header>
-    
-    <!-- PARTIE PRINCIPALE DU SITE -->
-    <main>
-        <section class="carre-contenu-bio">
-            <div class="conteneur-robbie-lens">
-                <div class="conteneur-presentation-metier">
-                    <h1>Robbie Lens Photographie</h1>
 
-                    <p>
-                        Où <em>professionalisme</em> s'allie avec <em>passion</em>. Depuis plus de 5 ans
-                        maintenant, j'exerce mon métier avec la passion qui m'anime :
-                        capturer l'essence de chaque instant.
-                    </p>
+            <div class="conteneur-photo-robbie-lens">
+                <div class="cube-deco"></div>
+                <img src="src/img/Robbie_Lens/robbie-lens.png" alt="portrait de Robbie Lens">
+            </div>
+        </div>
+    </section>
 
-                    <div class="conteneur-bouton-1">
-                        <a class="cta" href="#">UN PROJET ? ÉCRIVEZ-MOI</a>
-                    </div>
+    <section class="carre-contenu-projet">
+        <div class="conteneur-dernier-projet">
+            <h2 class="sous-titre-accueil-1">Mon dernier projet</h2>
+
+            <div class="conteneur-biblio-projet">
+                <div class="rangee-1">
+                    <div class="paysage7-crique"></div>
+                    <div class="paysage8-source-chaude"></div>
+                    <div class="paysage2-ciel-rouge"></div>
                 </div>
-                
-                <div class="conteneur-photo-robbie-lens">
-                    <div class="cube-deco"></div>
-                    <img src="images/robbie-lens.png" alt="portrait de Robbie Lens">
+                <div class="rangee-2">
+                    <div class="paysage3-pont"></div>
+                    <div class="paysage6-montagne-lac"></div>
+                    <div class="paysage4-arbre-lac"></div>
+                </div>
+                <div class="bouton-portfolio">
+                    <!-- la classe 'cta' veut dire "Call To Action" -->
+                    <a class="cta" href="src/pages/portfolio/portfolio.html">VOIR MON PORTFOLIO</a>
                 </div>
             </div>
-        </section>
-        
-        <section class="carre-contenu-projet">
-            <div class="conteneur-dernier-projet">
-                <h2 class="sous-titre-accueil-1">Mon dernier projet</h2>
+        </div>
+    </section>
 
-                <div class="conteneur-biblio-projet">
-                    <div class="rangee-1">
-                        <div class="paysage7-crique"></div>
-                        <div class="paysage8-source-chaude"></div>
-                        <div class="paysage2-ciel-rouge"></div>
-                    </div>
-                    <div class="rangee-2">
-                        <div class="paysage3-pont"></div>
-                        <div class="paysage6-montagne-lac"></div>
-                        <div class="paysage4-arbre-lac"></div>
-                    </div>
-                    <div class="conteneur-bouton-2">
-                        <a class="cta" href="html/portfolio.html">VOIR MON PORTFOLIO</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="carre-contact">
-            <div class="conteneur-contact">
-                <h2 class="sous-titre-accueil-2">Parlons de votre projet</h2>
+    <section class="carre-contact">
+        <div class="conteneur-contact">
+            <h2 class="sous-titre-accueil-2">Parlons de votre projet</h2>
+            <form action="" method="POST">
                 <div class="grid-contact">
-                    
+                    <div class="partie-nom">
+                        <label for="nom">Nom</label><br/>
+                        <input type="text" id="nom" name="nom" placeholder="Rentrer votre nom">
+                    </div>
+                    <div class="partie-email">
+                        <label for="email">E-mail</label><br/>
+                        <input type="email" id="email" name="email" placeholder="Rentrer votre email">
+                    </div>
+                    <div class="partie-message">
+                        <label for="message">Message</label><br/>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea><br/>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+                <div class="bouton-envoyer">
+                    <input type="submit" value="ENVOYER">
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
 
-    <!-- PIED DE PAGE DU SITE -->
-    <footer>
-        <section>
-            <div class="infos-footer">
-                <a href="index.html"><img class="logo-site-footer" src="images/logo.png" alt="logo Robbie Lens"/></a>
-                <div class="conteneur-liens-footer">
-                    <a href="https://twitter.com/" target="_blank"><img class="icones-reseaux" src="images/twitter.png" alt="logo Twitter" /></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img class="icones-reseaux" src="images/instagram.png" alt="logo Instagram" /></a>
-                </div>
+<!-- PIED DE PAGE DU SITE -->
+<footer>
+    <section>
+        <div class="infos-footer">
+            <a href="index.html">
+                <img class="logo-site-footer"
+                     src="src/img/logo/logo.png"
+                     alt="logo Robbie Lens"/>
+            </a>
+            <div class="conteneur-liens-footer">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img class="icones-reseaux"
+                         src="src/img/icon/reseaux/instagram.png"
+                         alt="logo Instagram"/>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img class="icones-reseaux"
+                         src="src/img/icon/reseaux/twitter.png"
+                         alt="logo Twitter"/>
+                </a>
             </div>
-        </section>
-    </footer>
+        </div>
+    </section>
+</footer>
 </body>
 
 

@@ -1,189 +1,73 @@
-/* Style en commun de toutes les pages */
+/* -------------------------------- LES IMPORTS -------------------------------- */
 
-body {
-    margin: 0;
-    font-family: 'Manrope', sans-serif;
-    font-size: 1em;
-    background-color: #1F2039;
-}
-
-h1 {
-    font-size: 3.5em;
-    color: #A5B4FC;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-}
-
-h2 {
-    color: #242424;
-}
-
-p {
-    font-size: 1.1em;
-    font-family: 'Manrope', sans-serif;
-    color: #F9F8FF;
-}
-
-a {
-    text-decoration: none;
-    font-size: 1em;
-    font-family: 'Manrope', sans-serif;
-    color: #242424;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-header, 
-footer {
-    background-color: white;
-    padding: 20px 50px;
-}
-
-.logo-site:hover {
-    opacity: 0.5;
-}
-
-.icones-reseaux:hover {
-    opacity: 0.5;
-}
-
-.conteneur-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.logo-site {
-    margin-left: 30px;
-}
-
-.conteneur-liens {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex: auto;
-    gap: 100px;
-}
-
-.infos-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.logo-site-footer {
-    margin-left: 30px;
-    width: 70px;
-}
-
-.conteneur-liens-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex: auto;
-    gap: 30px;
-}
+@import "src/css_communs/variables.css";
 
 
-/* Style en commun avec la page "À propos" */
-
-.cta {
-    color: white;
-    background: linear-gradient(#8E86B5, #ACAEED);
-    padding: 20px 30px;
-    border-radius: 50px;
-    text-align: center;
-}
-
-.cta:hover {
-    background: linear-gradient(#696484, #8788BA);
-    text-decoration: none;
-}
-
+/* -------------------------------- PARTIE PRÉSENTATION DE ROBBIE LENS -------------------------------- */
 
 /* Style spécifique à la page d'accueil */
 
-em {
-    font-style: normal;
-    color: #A5B4FC;
-}
-
-.sous-titre-accueil-1 {
-    color: #242424;
-}
-
-.sous-titre-accueil-2 {
-    color: #A5B4FC;
-}
-
 .carre-contenu-bio {
-    padding: 80px;
+    padding: 100px 200px;
 }
 
-.carre-contenu-bio
-.conteneur-robbie-lens {    
-    justify-content: center;
-    gap: 5%;
+.carre-contenu-bio p {
+    font-size: 1.3em;
 }
 
 .conteneur-robbie-lens {
     display: flex;
     flex-direction: row;
-    width: auto;
+    justify-content: center;
+    gap: 13%;
 }
 
 .conteneur-presentation-metier {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 500px;
+    width: 400px;
 }
 
-.conteneur-presentation-metier
-h1 {
+/* Position du titre h1 : Robbie Lens Photographie */
+.conteneur-presentation-metier h1 {
     margin: 0;
 }
 
-.conteneur-presentation-metier
-h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
+/* Bouton 1 : Un projet ? Écrivez-moi */
 .conteneur-bouton-1 {
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 3%;
     height: auto;
-    width: 52%;
+    width: 300px;
 }
 
+/* Conteneur de la photo de Robbie Lens */
 .conteneur-photo-robbie-lens {
     display: grid;
     grid-template-columns: 100px 100px 100px 60px 100px;
     grid-template-rows: 100px 100px 100px 60px 100px;
 }
 
+/* Décoration qui décor la photo de Robbie Lens */
 .cube-deco {
     grid-column: 5 / 5;
     grid-row: 5 / 5;
-    border-right: 1px #8E86B5 solid;
-    border-bottom: 1px #8E86B5 solid;
+    border-right: 1px var(--couleur-fonce-violet-gris) solid;
+    border-bottom: 1px var(--couleur-fonce-violet-gris) solid;
 }
 
-.conteneur-photo-robbie-lens
-img {
-    border: 3px #8E86B5 solid;
-}
 
+/* -------------------------------- PARTIE DES PROJETS ACTUELS -------------------------------- */
+
+/* Les conteneurs de la partie : Mon dernier projet */
 .carre-contenu-projet {
     padding: 70px;
-    padding-bottom: 90px;
     background-color: white;
 }
+
 
 .conteneur-dernier-projet {
     margin: 0;
@@ -192,12 +76,20 @@ img {
     text-align: center;
 }
 
-.conteneur-dernier-projet
-h2 {
+/* Partie sous-titre 1 - titre h2 : Mon dernier projet */
+.sous-titre-accueil-1 {
+    color: var(--couleur-fonce-gris-anthracite);
+    font-size: 2.2em;
+    font-family: var(--typo-titre), sans-serif;
+    font-weight: 500;
+}
+
+.conteneur-dernier-projet h2 {
     margin: auto;
     padding-bottom: 70px;
 }
 
+/* Rangé 1 - Les 3 premières photos */
 .rangee-1 {
     display: flex;
     flex-direction: row;
@@ -208,7 +100,7 @@ h2 {
 
 .paysage7-crique {
     background-color: lightgrey;
-    background-image: url('images/portfolio/paysages/paysage7.jpg');
+    background-image: url('src/img/portfolio/paysages/paysage7.jpg');
     background-position: center;
     background-size: cover;
     width: 320px;
@@ -217,7 +109,7 @@ h2 {
 
 .paysage8-source-chaude {
     background-color: lightgrey;
-    background-image: url('images/portfolio/paysages/paysage8.jpg');
+    background-image: url('src/img/portfolio/paysages/paysage8.jpg');
     background-position: center;
     background-size: cover;
     width: 320px;
@@ -226,13 +118,14 @@ h2 {
 
 .paysage2-ciel-rouge {
     background-color: lightgrey;
-    background-image: url('images/portfolio/paysages/paysage2.jpg');
+    background-image: url('src/img/portfolio/paysages/paysage2.jpg');
     background-position: center;
     background-size: cover;
     width: 320px;
     height: 300px;
 }
 
+/* Rangé 2 - Les 3 dernières photos */
 .rangee-2 {
     display: flex;
     flex-direction: row;
@@ -242,7 +135,7 @@ h2 {
 
 .paysage3-pont {
     background-color: lightgrey;
-    background-image: url('images/portfolio/paysages/paysage3.jpg');
+    background-image: url('src/img/portfolio/paysages/paysage3.jpg');
     background-position: center;
     background-size: cover;
     width: 320px;
@@ -251,7 +144,7 @@ h2 {
 
 .paysage6-montagne-lac {
     background-color: lightgrey;
-    background-image: url('images/portfolio/paysages/paysage6.jpg');
+    background-image: url('src/img/portfolio/paysages/paysage6.jpg');
     background-position: center;
     background-size: cover;
     width: 320px;
@@ -260,30 +153,133 @@ h2 {
 
 .paysage4-arbre-lac {
     background-color: lightgrey;
-    background-image: url('images/portfolio/paysages/paysage4.jpg');
+    background-image: url('src/img/portfolio/paysages/paysage4.jpg');
     background-position: center;
     background-size: cover;
     width: 320px;
     height: 300px;
 }
 
-.conteneur-bouton-2 {
+
+/* Bouton 2 : Voir mon portfolio */
+.bouton-portfolio {
     display: flex;
     justify-content: center;
-    padding: 50px;
+    padding: 60px;
 }
 
+/* -------------------------------- PARTIE CONTACT -------------------------------- */
+
+/* Conteneur contact */
 .carre-contact {
     padding: 70px;
 }
 
-.conteneur-contact {
-    margin: 0;
-    background-color: rgb(4, 92, 4);
+/* Partie sous-titre 2 - titre h2 : Parlons de votre projet */
+.sous-titre-accueil-2 {
+    color: var(--couleur-clair-bleu-lavande);
+    font-size: 2.2em;
+    font-family: var(--typo-titre), sans-serif;
+    font-weight: 500;
+}
+
+.conteneur-contact h2 {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .grid-contact {
     display: grid;
-    
+    grid-template-columns: 260px 260px;
+    grid-template-rows: 100px 247px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.partie-nom {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.partie-email {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.partie-message {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.bouton-envoyer {
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
+}
+
+/* Partie Nom */
+.partie-nom label {
+    color: white;
+    font-family: var(--typo-texte), sans-serif;
+    font-size: 18px;
+}
+
+.partie-nom input {
+    font-family: var(--typo-texte), sans-serif;
+    font-size: 18px;
+    width: 253px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+/* Partie email */
+.partie-email label {
+    color: white;
+    font-family: var(--typo-texte), sans-serif;
+    font-size: 18px;
+}
+
+.partie-email input {
+    font-family: var(--typo-texte), sans-serif;
+    font-size: 18px;
+    width: 253px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+/* Partie Message */
+.partie-message label {
+    color: white;
+    font-family: var(--typo-texte), sans-serif;
+    font-size: 18px;
+}
+
+.partie-message textarea {
+    font-family: var(--typo-texte), sans-serif;
+    font-size: 18px;
+    width: 535px;
+    height: 207px;
+    margin-top: 10px;
+}
+
+/* Partie bouton "ENVOYER" */
+
+.bouton-envoyer {
+    display: flex;
+    justify-content: center;
+}
+
+.bouton-envoyer input[type=submit] {
+    color: white;
+    background: linear-gradient(var(--couleur-fonce-violet-gris), var(--couleur-clair-mauve-pastel));
+    border-radius: 50px;
+    width: 216px;
+    height: 65px;
+    font-family: var(--typo-titre), sans-serif;
+    font-size: 18px;
+    border: none;
+    margin: 50px auto;
+}
+
+.bouton-envoyer input[type=submit]:hover {
+    background: linear-gradient(var(--couleur-plusFonce-violet-gris), var(--couleur-clair-violet));
 }

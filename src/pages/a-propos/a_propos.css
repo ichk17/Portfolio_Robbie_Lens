@@ -1,0 +1,182 @@
+/* -------------------------------- LES IMPORTS -------------------------------- */
+
+@import "src/css_communs/variables.css";
+
+/* -------------------------------- STYLE À PROPOS -------------------------------- */
+
+.carre-contenu-description {
+    padding: 80px;
+    text-align: center;
+}
+
+ul {
+    font-size: 1em;
+    font-family: 'Manrope', sans-serif;
+    color: var(--couleur-clair-blanc);
+}
+
+.carre-contenu-description ul,
+.carre-contenu-description p {
+    text-align: left;
+}
+
+.carre-contenu-description p {
+    padding-bottom: 10px;
+}
+
+.carre-contenu-description h1 {
+    font-weight: 400;
+}
+
+.conteneur-biblio-photos {
+    margin: 70px 100px 300px 100px;
+    padding-bottom: 100px;
+    background-color: chocolate;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rangee-robbie-lens-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+.photo-robbie-lens-1 {
+    background-color: lightgrey;
+    background-image: url('../../img/Robbie_Lens/robbie-lens.png');
+    background-position: center;
+    background-size: cover;
+    width: 192.25px;
+    height: 195px;
+}
+
+.photo-robbie-lens-2 {
+    background-color: lightgrey;
+    background-image: url('../../img/Robbie_Lens/robbie-lens.png');
+    background-position: center;
+    background-size: cover;
+    width: 192.25px;
+    height: 195px;
+}
+
+.photo-robbie-lens-3 {
+    background-color: lightgrey;
+    background-image: url('../../img/Robbie_Lens/robbie-lens.png');
+    background-position: center;
+    background-size: cover;
+    width: 192.25px;
+    height: 195px;
+}
+
+.photo-robbie-lens-4 {
+    background-color: lightgrey;
+    background-image: url('../../img/Robbie_Lens/robbie-lens.png');
+    background-position: center;
+    background-size: cover;
+    width: 192.25px;
+    height: 195px;
+}
+
+.photo-robbie-lens-5 {
+    background-color: lightgrey;
+    background-image: url('../../img/Robbie_Lens/robbie-lens.png');
+    background-position: center;
+    background-size: cover;
+    width: 192.25px;
+    height: 195px;
+}
+
+.rangee-robbie-lens-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5%;
+}
+
+.photo-robbie-lens-6 {
+    background-color: lightgrey;
+    background-image: url('../../img/Robbie_Lens/robbie-lens.png');
+    background-position: center;
+    background-size: cover;
+    width: 192.25px;
+    height: 195px;
+}
+
+.photo-robbie-lens-7 {
+    background-color: lightgrey;
+    background-image: url('../../img/Robbie_Lens/robbie-lens.png');
+    background-position: center;
+    background-size: cover;
+    width: 192.25px;
+    height: 195px;
+}
+
+.photo-robbie-lens-8 {
+    background-color: lightgrey;
+    background-image: url('../../img/Robbie_Lens/robbie-lens.png');
+    background-position: center;
+    background-size: cover;
+    width: 192.25px;
+    height: 195px;
+}
+
+.photo-robbie-lens-9 {
+    background-color: lightgrey;
+    background-image: url('../../img/Robbie_Lens/robbie-lens.png');
+    background-position: center;
+    background-size: cover;
+    width: 192.25px;
+    height: 195px;
+}
+
+.photo-robbie-lens-10 {
+    background-color: lightgrey;
+    background-image: url('../../img/Robbie_Lens/robbie-lens.png');
+    background-position: center;
+    background-size: cover;
+    width: 192.25px;
+    height: 195px;
+}
+
+.conteneur-rectangle-deco {
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.rectangle-deco {
+    background-color: lightgray;
+    opacity: 80%;
+    width: 615px;
+    height: 413px;
+    position: absolute;
+}
+
+.sous-titre-services {
+    color: var(--couleur-clair-blanc);
+    padding-bottom: 60px;
+}
+
+.sous-titre-tarifs {
+    color: var(--couleur-clair-blanc);
+}
+
+.conteneur-a-propos {
+    width: 870px;
+    border-right: 1px var(--couleur-fonce-violet-gris) solid;
+    border-bottom: 1px var(--couleur-fonce-violet-gris) solid;
+    padding: 40px 50px;
+    margin: auto;
+}
+
+.bouton-portfolio {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}

@@ -1,0 +1,20 @@
+/* ================================ SÉLECTEUR ROOT ================================ */
+
+
+/* LE SÉLECTEUR DE VARIABLES */
+
+:root {
+    /* --- Les différentes couleurs du site --- */
+    --couleur-fonce-bleu-nuit: #1F2039; /* Bleu nuit profond (une partie du fond principal est sombre) */
+    --couleur-clair-bleu-lavande: #A5B4FC; /* Bleu lavande clair (Les titres h1) */
+    --couleur-clair-blanc: #F9F8FF; /* Blanc cassé (Texte des paragraphes) */
+    --couleur-fonce-violet-gris: #8E86B5; /* Violet grisâtre (Dégradé des boutons clair) */
+    --couleur-clair-mauve-pastel: #ACAEED; /* Mauve pastel (Dégradé des boutons clair) */
+    --couleur-plusFonce-violet-gris: #696484; /* Gris violet foncé (Dégradé des boutons foncé) */
+    --couleur-clair-violet: #8788BA; /* Gris violet clair (Dégradé des boutons foncé) */
+    --couleur-fonce-gris-anthracite: #242424; /* Gris anthracite (titres h2 et liens a) */
+    /* --- Les différentes typographies du site --- */
+    --typo-titre: 'Montserrat';
+    --typo-texte: 'Manrope';
+    --typo-hover: 'Michroma';
+}
